@@ -2,7 +2,7 @@ terraform {
   cloud {
     organization = "KELLY-training"
     workspaces {
-        tags = "learn-sentinel-tfc"
+        name = "learn-sentinel-tfc"
     }
   }
   required_providers {
