@@ -1,4 +1,10 @@
 terraform {
+  cloud {
+    organization = "KELLY-training"
+    workspaces {
+        tags = "learn-sentinel-tfc"
+    }
+  }
   required_providers {
     random = {
       source  = "hashicorp/random"
