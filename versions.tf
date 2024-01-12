@@ -17,13 +17,4 @@ terraform {
   }
 
   required_version = ">= 0.15"
-
-  backend "remote" {
-    organization = "<KELLY-training>"
-
-    workspaces {
-      name = "learn-sentinel-tfc"
-    }
-  }
-
 }
