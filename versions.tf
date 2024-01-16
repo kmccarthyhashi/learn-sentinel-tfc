@@ -1,8 +1,11 @@
 terraform {
-  cloud {
-    organization = "KELLY-training"
+  backend "remote" {
+    organization = "<YOUR_TERRAFORM_ORG>"
+    organization = "<KELLY-training>"
+
     workspaces {
-        name = "learn-sentinel-tfc"
+      name = "sentinel-example"
+      name = "learn-sentinel-tfc"
     }
   }
   required_providers {
