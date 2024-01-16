@@ -1,10 +1,8 @@
 terraform {
   backend "remote" {
-    organization = "<YOUR_TERRAFORM_ORG>"
     organization = "<KELLY-training>"
 
     workspaces {
-      name = "sentinel-example"
       name = "learn-sentinel-tfc"
     }
   }
